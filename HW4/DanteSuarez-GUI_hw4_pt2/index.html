@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<!--
+    Name: Dante Suarez
+    Date: 11/20/2022
+    Class: GUI Programming 1
+    Assignment: HW4
+    Email: dante_suarez@student.uml.edu 
+    Document: index.html
+-->
+
+<html lang="en">
+<head>
+    <title>Table Generator</title>
+    <meta charset="utf-8">
+
+    <link href="https://code.jquery.com/ui/1.11.4/themes/black-tie/jquery-ui.css" rel = "stylesheet">
+
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/additional-methods.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+
+    <link href="css/style.css" rel="stylesheet">
+    
+</head>
+<body>
+
+    <h1>Dante's Multiplication Table Generator</h1>
+
+    <div class="container">
+        <!-- Tabs are located here -->
+        <div class="row">
+            <div id="tabs_cont">
+                <ul id="tabs_list"></ul>
+            </div>
+        </div>
+
+ 
+        <div class="row">
+            <!--Form for input-->
+            <form id="form" class=" col-md-10 col-lg-10 col-sm-10 form-group" action="">
+
+                <h5>Enter numbers between -50 and 50</h5>
+
+                <!--Error message box div-->
+                <div class= "hide" id="message"></div>
+
+                <!--Menu-->
+                <label class="form-group" for="low_col">Low Column:</label>
+                <input class="form-group" type="text" id="low_col" name="low_col"><br>
+                <div class="slider" id="low_col_slider"></div>
+
+                <label class="form-group"for="high_col">High Column:</label>
+                <input class="form-group"type="text" id="high_col" name="high_col" ><br>
+                <div id = "high_col_slider"></div>
+
+                <label class="form-group"for="low_row">Low Row:</label>
+                <input class="form-group"type="text" id="low_row" name="low_row"><br>
+                <div class="slider" id = "low_row_slider"></div>
+
+                <label class="form-group"for="high_row">High Row:</label>
+                <input class="form-group"type="text" id="high_row" name="high_row"><br>
+                <div id = "high_row_slider"></div>
+
+                <button class="form-group"type="button" onclick="add_tab()"> Save</button>
+
+            
+            </form> 
+
+            <!--Here is where the multiplication table will appear-->
+            <div class="col-sm-10 col-md-10 col-lg-10" id="multiplication_table"></div>
+
+        </div>
+    </div>
+
+</div>
+    
+    <script src="js/generator.js"></script>
+
+
+</body>
+</html>
+
