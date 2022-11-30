@@ -12,3 +12,5 @@ PART 2 LINKS
 ------------------
 #Webpage Link - https://dantesuarez.github.io/GUI_hw4/DanteSuarez-GUI_hw4_pt2/
 #Repo Link - https://github.com/dantesuarez/GUI_hw4/
+
+Unfortunately never was able to implement the remove tabs feature into part 2.
